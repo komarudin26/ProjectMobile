@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JualActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Green"
+        android:fontFamily="@font/thin"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:navigationIcon="@drawable/back1"
+        app:title="@string/Jual"
+        app:titleTextColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/back1" />
+
+    <LinearLayout
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:layout_below="@id/toolbar2">
+
+        <Button
+            android:id="@+id/button_choose_image"
+            android:layout_width="170dp"
+            android:layout_height="180dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="9dp"
+            android:background="@color/white"
+            android:text="+ Tambah Foto/Video" />
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="170dp"
+            android:layout_height="180dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="9dp"
+            android:layout_toEndOf="@+id/button_choose_image"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/nama"
+        android:layout_below="@id/image"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/input_text"
+        android:ems="10"
+        android:hint="Nama Barang"
+        android:inputType="text"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/deskripsi"
+        android:layout_below="@id/nama"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/input_text"
+        android:ems="10"
+        android:hint="Deskripsi "
+        android:inputType="text"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/harga"
+        android:layout_below="@id/deskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/input_text"
+        android:ems="10"
+        android:hint="Harga Barang"
+        android:inputType="number"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/lokasi"
+        android:layout_below="@id/harga"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/input_text"
+        android:ems="10"
+        android:hint="Lokasi"
+        android:inputType="text"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/tanggal"
+        android:layout_below="@id/lokasi"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/input_text"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Tanggal"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/telp"
+        android:layout_below="@id/tanggal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/input_text"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="No. Telp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/upload_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@color/Green"
+        android:fontFamily="@font/bold"
+        android:text="Jual Barang"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/upload_button"
+        android:layout_marginBottom="-6dp" />
+
+
+
+
+</RelativeLayout>
